@@ -25,7 +25,11 @@ RUN <<EOF
     libzip-dev=1.7.3-1 \
     libicu-dev=67.1-7 \
     libonig-dev=6.9.6-1.1 \
-    default-mysql-client=1.0.7
+    default-mysql-client=1.0.7 \
+    curl \
+    gnupg
+  curl -sL https://deb.nodesource.com/setup_16.x | bash -
+  apt-get install -y nodejs
   locale-gen en_US.UTF-8
   localedef -f UTF-8 -i en_US en_US.UTF-8
   docker-php-ext-install \
