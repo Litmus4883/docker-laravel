@@ -28,7 +28,7 @@ RUN <<EOF
     default-mysql-client=1.0.7 \
     curl \
     gnupg
-  curl -sL https://deb.nodesource.com/setup_16.x | bash -
+  curl -sL https://deb.nodesource.com/setup_20.x | bash -
   apt-get install -y nodejs
   locale-gen en_US.UTF-8
   localedef -f UTF-8 -i en_US en_US.UTF-8
